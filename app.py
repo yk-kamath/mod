@@ -28,7 +28,7 @@ api_key = st.secrets["openai_secret"]
 client = OpenAI(api_key=api_key)
 
 # Streamlit UI components
-st.title("OpenAI Moderation API Demo")
+st.title('''Dr. Ernesto Lee - CAI 2300C - 25  Introduction to Natural Language Processing at Miami Dade College - Kendall Campus''')
 
 user_input = st.text_area("Enter text to moderate")
 
