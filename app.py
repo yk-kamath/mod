@@ -32,7 +32,7 @@ st.title('''Dr. Ernesto Lee - CAI 2300C Introduction to Natural Language Process
 
 user_input = st.text_area("Enter text to moderate")
 
-if st.button('Moderate'):
+if st.button('Detect Hate'):
     response = client.moderations.create(input=user_input)
     output = response.results[0]
     serialized_output = serialize(output)
@@ -41,9 +41,3 @@ if st.button('Moderate'):
 
 
 
-
-
-
-tab1, tab2, tab3 = st.tabs(['Tab 1', 'Tab 2', 'Tab 3'])
-with tab1:
-    st.write("This is tab 1")
