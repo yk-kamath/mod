@@ -38,3 +38,12 @@ if st.button('Moderate'):
     serialized_output = serialize(output)
     json_output = json.dumps(serialized_output, indent=2, ensure_ascii=False)
     st.json(json_output)
+
+
+
+
+
+
+tab1, tab2, tab3 = st.tabs(['Tab 1', 'Tab 2', 'Tab 3'])
+with tab1:
+    st.write("This is tab 1")
